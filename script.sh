@@ -17,8 +17,5 @@ sudo apt-get install \
   
   docker pull fluencelabs/fluence
   
-  
-  screen -S fluence
-  docker run --rm -e RUST_LOG="info" -p 7777:7777 -p 9999:9999 fluencelabs/fluence
 
   
