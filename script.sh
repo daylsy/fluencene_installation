@@ -14,3 +14,11 @@ sudo apt-get install \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   sudo apt-get update
   sudo apt-get install docker-ce docker-ce-cli containerd.io
+  
+  docker pull fluencelabs/fluence
+  
+  
+  screen -S fluence
+  docker run --rm -e RUST_LOG="info" -p 7777:7777 -p 9999:9999 fluencelabs/fluence
+
+  
